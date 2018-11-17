@@ -15,7 +15,7 @@ router.get('/:urlId', (req, res, next) => {
       res.redirect(301, url.original_url);
     }
     else {
-      err = new Error('short url given: ' + req.params.urlId 
+      let err = new Error('short url given: ' + req.params.urlId 
       + ' is not registered');
       err.status = 404;
       return next(err);
