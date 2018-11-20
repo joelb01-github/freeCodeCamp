@@ -6,18 +6,9 @@ var userSchema = new Schema({
     type: String,
     required: true
   },
-  exercises: [{
-    description: {
-      type: String,
-      required: true
-    },
-    duration: {
-      type: String,
-      required: true
-    },
-    date: {
-      type: Date
-    }
+  exercises: [{ 
+    type: Schema.Types.ObjectId, 
+    ref: 'Exercise'
   }]
 });
 
