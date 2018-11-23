@@ -5,7 +5,6 @@ const Exercises = require('../models/exercises');
 var bodyParser = require('body-parser');
 var jsonParser = bodyParser.json();
 
-
 /* GET all users */
 router.get('/users', (req, res, next) => {
   Users.find({})
@@ -66,6 +65,7 @@ router.get('/log', (req, res, next) => {
       }
       match_cond.date['$lte'] = to_date;
   }
+  
   Users.findById(req.query.userId)
   .populate({
     path: 'exercises',
