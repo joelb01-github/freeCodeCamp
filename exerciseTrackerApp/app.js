@@ -8,6 +8,7 @@ var config = require('./config');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var docRouter = require('./routes/doc');
 
 const url = config.mongoUrl;
 const connect = mongoose.connect(url);
@@ -29,9 +30,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'out')));
 
 app.use('/', indexRouter);
-app.use('/api/exercise', usersRouter);
+app.use('/api', usersRouter);
+app.use('/doc', docRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
