@@ -25,7 +25,7 @@ GET [base url]/api/whoami
 ```
 
 Example Usage: 
-[[base url]/api/whoami]()
+- [[base url]/api/whoami]()
   
 Example Output:
 ```

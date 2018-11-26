@@ -24,8 +24,8 @@ GET [project_url/api/timestamp/:date_string?
 ```
 
 Example Usage: 
-[[project url]/api/timestamp/2015-12-25]()
-[[project url]/api/timestamp/1450137600]()
+- [[project url]/api/timestamp/2015-12-25]()
+- [[project url]/api/timestamp/1450137600]()
   
 Example Output:
 ```
