@@ -1,4 +1,4 @@
-# Exercise Tracker App
+# Exercise Tracker
 
 Inspired by [Freecodecamp](https://learn.freecodecamp.org/apis-and-microservices/apis-and-microservices-projects/exercise-tracker) projects.
 
