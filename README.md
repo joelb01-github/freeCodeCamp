@@ -7,9 +7,9 @@ Several projects to apply knowledge learned on API and microservices development
 ## Projects
 
 - [Timestamp Microservice](/timeStampApp)
-- [Request Header Parser Microservice]
-- [URL Shortener Microservice]
-- [Exercise Tracker]
+- [Request Header Parser Microservice](/requestHeaderParserApp)
+- [URL Shortener Microservice](urlShortenerApp)
+- [Exercise Tracker](exerciseTrackerApp)
 - [File Metadata Microservice]
 
 ## Authors
